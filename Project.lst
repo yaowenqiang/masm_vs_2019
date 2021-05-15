@@ -1,0 +1,31 @@
+Microsoft (R) Macro Assembler Version 14.28.29915.0	    05/15/21 22:22:34
+t1.asm							     Page 1 - 1
+
+
+				assume cs:codesg
+ 0000				codesg segment
+ 0000  8E D0			    mov ss, ax
+ 0002  BC 0000			    mov sp, 0
+ 0005  83 C4 0A			    add sp, 10
+ 0008  58			    pop ax
+ 0009  5B			    pop bx
+ 000A  50			    push ax
+ 000B  53			    push bx
+
+ 000C  B8 4C00			    mov ax, 4c00h
+ 000F				codesg ends
+				end
+Microsoft (R) Macro Assembler Version 14.28.29915.0	    05/15/21 22:22:34
+t1.asm							     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+codesg . . . . . . . . . . . . .	16 Bit	 000F	  	  Private 
+
+	   0 Warnings
+	   0 Errors
